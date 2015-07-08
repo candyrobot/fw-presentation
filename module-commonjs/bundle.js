@@ -4,8 +4,17 @@ var string = require('./utils/string');
 console.log(string.nl2br('some texts'));
 
 
-},{"./utils/string":2}],2:[function(require,module,exports){
-module.exports = (function(){
+
+
+
+////////////////////////// or /////////////////////////
+var utils = require('./utils');
+
+console.log(utils.string.nl2br('some texts2'));
+
+
+},{"./utils":2,"./utils/string":3}],2:[function(require,module,exports){
+module.exports.string = (function(){
 	return {
 		nl2br : function( str ){
 			// some implements.
@@ -13,4 +22,43 @@ module.exports = (function(){
 		}
 	}
 })();
+
+
+
+/////////////////////////// or /////////////////////////////
+// this.string = {
+// 	nl2br : function( str ){
+// 			// some implements.
+// 			return str;
+// 		}
+// };
+
+
+
+
+////////////////////////////////////////////////////////
+
+// fooがundefinedなのでエラー
+// module.exports.foo.bar = (function(){
+// 	return {...};
+// })();
+
+},{}],3:[function(require,module,exports){
+module.exports.nl2br = function(str){
+	// some implements.
+	return str;
+};
+
+
+
+
+
+/////////////////////////// or /////////////////////////////
+// this.nl2br = function(str){
+// 	// some implements.
+// 	return str;
+// };
+
+
+
 },{}]},{},[1]);
