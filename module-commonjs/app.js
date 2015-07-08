@@ -1,14 +1,4 @@
-// var Foo = require('./foo');
+var string = require('./utils/string');
 
-// var foo = new Foo('sato');
-
-// var out = foo.method(); // -> 'sato'
-// console.log(out);
-
-
-var utils = require('./utils/string');
-
-utils.
-
-console.log(utils.string.nl2br());
+console.log(string.nl2br('some texts'));
 
