@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<!--
+// ES6 -> ES5
+// --targetいらない？
+$ node TypeScript/built/local/tsc.js --target ES5 app.ts
+// commonjs -> normal
+$ browserify app.js -o bundle.js
+
+//=========improvement=========
+
+// ES6 -> ES5
+$ tsc app.ts --module commonjs
+// commonjs -> normal
+$ browserify app.js -o bundle.js
+-->
+<head lang="ja">
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+  <script src="bundle.js"></script>
+  <title></title>
+</head>
+
+<body>
+
+</body>
+
+</html>
