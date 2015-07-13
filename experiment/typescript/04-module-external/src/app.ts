@@ -1,17 +1,24 @@
-import m1 = require("./module");
+import mod = require("./module.js");
 
-var v = m1.fooVariable;
+console.log(mod);
 
-console.log(v);
+//変数つかう
+console.log(mod.fooVariable);
 
-var f = m1.fooFunction();
+//関数使う
+console.log(mod.fooFunction());
 
-var c = new m1.FooClass;
+//クラス使う
+console.log(new mod.IamClass);
 
-class Foo implements m1.FooInterface {
+//インターフェイス使う
+class Foo implements mod.FooInterface {
     public bar(): string {
         return "TypeScript";
     }
 }
 
-var m = m1.FooModule.bar;
+//internal moduleを使う
+console.log(mod.FooModule.bar);
+
+

@@ -1,15 +1,15 @@
 // 変数のエクスポート
-export var fooVariable: string = "I am variable";
+export var fooVariable: string = "TypeScript";
 
 // 関数のエクスポート
 export function fooFunction(): string {
-    return "I am function";
+    return "TypeScript";
 }
 
 // クラスのエクスポート
-export class IamClass {
+export class FooClass {
     public bar(): string {
-        return "I am class";
+        return "TypeScript";
     }
 }
 
@@ -20,5 +20,5 @@ export interface FooInterface {
 
 // モジュールのエクスポート
 export module FooModule {
-    export var bar: string = "I am internal module";
+    export var bar: string = "TypeScript";
 }
