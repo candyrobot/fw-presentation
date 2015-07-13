@@ -1,8 +1,8 @@
-/// <reference path="module.ts"/>
-
 import m1 = require("./module");
 
 var v = m1.fooVariable;
+
+console.log(v);
 
 var f = m1.fooFunction();
 

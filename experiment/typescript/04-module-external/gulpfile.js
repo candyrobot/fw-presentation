@@ -6,8 +6,8 @@ var plumber = require('gulp-plumber');
 gulp.task('typescript',function(){
     gulp.src(['src/**/*.ts'])
         .pipe(plumber()) //エラーしてもウォッチを途中でやめないための処理
-        .pipe(typescript({module:"commonjs"})) //コンパイルする処理 moduleで出力するモジュールを指定
-        // .pipe(typescript({module:"amd"})) //コンパイルする処理 moduleで出力するモジュールを指定
+        // .pipe(typescript({module:"commonjs"})) //コンパイルする処理 moduleで出力するモジュールを指定
+        .pipe(typescript({module:"amd"})) //コンパイルする処理 moduleで出力するモジュールを指定
         .pipe(gulp.dest('dist/')); //ファイル出力先を指定
 });
 

@@ -1,5 +1,3 @@
-// module1.ts
-
 // 変数のエクスポート
 export var fooVariable: string = "TypeScript";
 
