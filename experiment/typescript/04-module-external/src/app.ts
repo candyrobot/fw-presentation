@@ -1,4 +1,4 @@
-import mod = require("./module.js");
+import mod = require("./module");
 
 console.log(mod);
 

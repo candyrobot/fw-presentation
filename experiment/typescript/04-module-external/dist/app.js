@@ -1,4 +1,4 @@
-var mod = require("./module.js");
+var mod = require("./module");
 console.log(mod);
 //変数つかう
 console.log(mod.fooVariable);
