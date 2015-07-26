@@ -1,0 +1,32 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- 次の meta タグによって最新のレンダリングモードを指定 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="TeamOn.sketch.css">
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+
+    <!-- Snap.svg のファイルをロード -->
+    <script src="../dist/snap.svg.js"></script>
+
+  </head>
+  <body>
+  <select onchange="Sketch.mode = this.value" style="border:1px solid lightblue;font-size:20px;">
+    <option value="arrow">arrow</option>
+    <option value="text">text</option>
+    <option value="shape" selected>shape</option>
+    <option value="pen" disabled>pen</option>
+    <option value="annotation" disabled>annotation</option>
+  </select>
+  <br />
+  - CRUD<br />
+  - 線を書く OK<br />
+  - ドラッグで四角い枠を生成して残す OK<br />
+  - ドラッグで矢印をのばして残す OK<br />
+  - クリックしてテキストエリアを表示し、キー入力でテキストを表示し残す OK<br />
+  <svg id="svg_as_paper" style="width:1000px; height:1000px;"></svg>
+  <script src="TeamOn.sketch.js"></script>
+  </body>
+</html>
